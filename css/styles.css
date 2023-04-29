@@ -677,3 +677,6 @@ img {
     visibility: hidden;
     pointer-events: none;
 }
+input {
+    display: block;
+}
