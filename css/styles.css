@@ -646,6 +646,10 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-size: 16px;
 }
 .modal > button {
     display: flex;
@@ -668,6 +672,7 @@ img {
     fill: #ffffff;
 }
 .modal-btn {
+    margin-bottom: 24px;
 }
 .modal-icon {
 }
@@ -677,6 +682,94 @@ img {
     visibility: hidden;
     pointer-events: none;
 }
+
+.contacts-book {
+    color: #2E2F42;
+    max-width: 360px;
+}
+.contacts-book-name {  
+    text-align: center;
+    max-width: 360px;
+    margin-bottom: 16px;  
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 24px;
+}
+label {
+    display: block;
+    margin: auto;
+    margin-bottom: 4px;
+
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+}
+
 input {
     display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-family: inherit;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+}
+textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    max-width: 360px;
+    min-width: 360px;
+    resize: none;
+}
+input:hover,
+input:focus {
+    border-color: var(--color-iris);
+}
+textarea::placeholder {
+    margin: 16px 8px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(46, 47, 66, 0.4);
+}
+textarea:hover,
+textarea:focus {
+    border-color: var(--color-iris);
+}
+.checkbox {
+}
+.btn-send {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 32px;
+    margin: auto;
+    flex-direction: row;
+
+    border: none;
+    height: 56px;
+    min-width: 169px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
