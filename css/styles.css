@@ -696,17 +696,6 @@ img {
     font-size: 16px;
     line-height: 24px;
 }
-label {
-    display: block;
-    margin: auto;
-    margin-bottom: 4px;
-
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    font-style: normal;
-}
 .user-data {
     position: relative;
     margin-bottom: 10px;
@@ -739,10 +728,15 @@ textarea {
 }
 input:hover {
     border-color: var(--color-iris);
+    transition: var(--transition);
 }
-
 input:focus {
     outline-color: var(--color-iris);
+    box-shadow: 0 0 0 1px rgba(77, 90, 229, 0.25);
+    transition: var(--transition);
+}
+input:focus + .icon-user {
+    fill: var(--color-iris);
 }
 textarea::placeholder {
     margin: 16px 8px;
@@ -763,9 +757,13 @@ textarea:hover {
 
 textarea:focus {
     outline-color: var(--color-iris);
+    box-shadow: 0 0 0 1px rgba(77, 90, 229, 0.25);
     transition: var(--transition);
 }
 .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .btn-send {
     display: flex;
@@ -805,6 +803,6 @@ button:focus {
 }
 .icon-user {
     position: absolute;
-    top: 17px;
+    top: 24px;
     left: 19px;
 }
