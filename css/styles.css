@@ -812,6 +812,8 @@ textarea:focus {
     border-color: var(--color-ocean);
     background-size: 10px;
 
+    transition-delay: 250ms, 250ms, 0;
+
 }
 .checkbox-text {
     font-family: var(--primary-font);
